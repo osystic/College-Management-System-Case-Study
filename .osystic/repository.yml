@@ -1,0 +1,36 @@
+schema_version: 2
+repository_class: public-showcase
+visibility: public
+lifecycle: completed
+owner_team: engineering
+data_classification: public
+client_identity_public: false
+portfolio:
+  eligible: true
+  status: approved-public-showcase
+source:
+  type: sanitized-confidential-engineering-case-study
+  confidential_source_linked: false
+  source_code_included: false
+publication:
+  contact_information_included: false
+  credentials_included: false
+  private_infrastructure_included: false
+  contract_or_payment_details_included: false
+  private_conversations_included: false
+delivery:
+  default_branch: main
+  ci_required: true
+  production_environment: false
+project:
+  key: college-management-system
+  name: Bilingual Higher-Education CMS
+  status: completed
+  actual_client_acceptance: separate-and-not-claimed
+website:
+  eligible: true
+  status: ready-for-review
+  canonical_slug: bilingual-higher-education-cms
+  auto_sync: false
+governance:
+  baseline: OSYSTIC-GitHub-Governance-v2.2
