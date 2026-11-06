@@ -12,7 +12,7 @@ The CMS reached a production technical-release verification checkpoint, **not a 
 
 ![Illustrative architecture of the bilingual higher-education CMS, showing a bilingual portal, role-based access, institutional service domains and protected records](assets/campus-system-concept.svg)
 
-*Original OSYSTIC editorial concept illustration. It is not an actual interface screenshot, a production architecture certification, student data or evidence of client sign-off.*
+*Original OSYSTIC editorial concept illustration (also available as an optimized WebP publishing cover). It is not an actual interface screenshot, a production architecture certification, student data or evidence of client sign-off.*
 
 A confidential higher-education software engagement, documented at the engineering-capability level. **This repository is a case study, not an open-source application or a copy of the private client delivery.**
 

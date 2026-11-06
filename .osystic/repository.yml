@@ -32,5 +32,9 @@ website:
   status: ready-for-review
   canonical_slug: bilingual-higher-education-cms
   auto_sync: false
+  cover:
+    path: assets/campus-system-concept.webp
+    kind: illustration
+    alt: OSYSTIC editorial illustration of bilingual college CMS service domains and secure data boundaries, not a live application screenshot.
 governance:
   baseline: OSYSTIC-GitHub-Governance-v2.2
