@@ -1,5 +1,9 @@
 # Case study — bilingual higher-education CMS
 
+## Executive summary
+
+OSYSTIC developed a PHP/MariaDB college administration system with a bilingual Arabic/English interface and permission-aware workflows across admissions, academics, student services, finance, faculty, quality and learning-related operations. The engineering work included secured records, domain validation and technical release checks. This sanitized case study describes a production technical-verification checkpoint; it does **not** assert final college acceptance, complete external provider activation or clearance to disclose client systems.
+
 ## Challenge
 
 Seven institutional workstreams needed a coherent record-and-workflow model: admissions, academic administration, students, finance, faculty, quality, and learning/executive operations. A partial collection of pages would not be enough. Cross-module data consistency, operator permissions, traceability, bilingual usability and deployability had to be treated as system concerns.
@@ -27,6 +31,12 @@ The private release evidence includes automated PHP regression, browser flows fo
 ## Outcome
 
 A production-deployed CMS application architecture with multi-module business workflows and a clear separation between implementation success, external-provider readiness and institutional acceptance. The engagement's reusable lesson is **explicit permissions + deterministic service validation + bilingual QA + reversible releases**.
+
+## Ownership and handover boundary
+
+The original source, internal databases, credentials, institution-specific policies, production access, release records and operator documentation remain outside this public companion. Public disclosure of architecture patterns is not equivalent to source delivery, intellectual-property assignment or a signed institutional handover. Private approvals and the institution's pending acceptance tasks must be verified independently.
+
+The accompanying [conceptual architecture illustration](assets/campus-system-concept.svg) depicts service boundaries rather than a captured production screen or verified deployment topology.
 
 ## Boundaries
 
