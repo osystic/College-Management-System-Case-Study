@@ -9,7 +9,7 @@ portfolio:
   eligible: true
   status: approved-public-showcase
 source:
-  type: sanitized-confidential-engineering-case-study
+  type: sanitized-client-delivery
   confidential_source_linked: false
   source_code_included: false
 publication:

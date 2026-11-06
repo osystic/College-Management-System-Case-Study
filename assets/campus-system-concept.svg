@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Bilingual higher-education CMS — conceptual architecture</title>
+  <desc id="desc">An editorial system-architecture illustration showing a bilingual portal, secure role-based access, six college service domains and protected storage. Not a screenshot of the actual client system.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#070D18"/><stop offset=".52" stop-color="#0C1729"/><stop offset="1" stop-color="#080F1D"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#3076D7" stop-opacity=".40"/><stop offset="1" stop-color="#3076D7" stop-opacity="0"/></radialGradient>
+    <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#1C344F" stop-opacity=".90"/><stop offset="1" stop-color="#0D1B2E" stop-opacity=".96"/></linearGradient>
+    <linearGradient id="blue" x1="0" x2="1"><stop stop-color="#3D8CFB"/><stop offset="1" stop-color="#6CD8F1"/></linearGradient>
+    <linearGradient id="cyan" x1="0" x2="1"><stop stop-color="#55CDF2"/><stop offset="1" stop-color="#96E7FF"/></linearGradient>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse"><path d="M58 0H0V58" fill="none" stroke="#91B8E3" stroke-opacity=".07"/></pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="16" stdDeviation="25" flood-color="#000610" flood-opacity=".65"/></filter>
+    <filter id="haze"><feGaussianBlur stdDeviation="60"/></filter>
+    <style>
+      .kicker{font:600 22px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;letter-spacing:3.8px;fill:#7DC9FF}
+      .title{font:700 56px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;letter-spacing:-1.9px;fill:#F2F7FF}
+      .sub{font:400 21px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#9EB3CC}
+      .small{font:600 17px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;letter-spacing:2px;fill:#A5BEDA}
+      .cardTitle{font:700 25px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#E7F3FF}
+      .cardSub{font:400 18px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#99AFCB}
+      .core{font:700 32px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#FFFFFF}
+      .pill{font:700 16px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;letter-spacing:1.5px;fill:#A9E9FE}
+      .connector{stroke:#549BE7;stroke-opacity:.47;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <ellipse cx="810" cy="450" rx="760" ry="440" fill="url(#glow)" opacity=".24"/>
+  <ellipse cx="1180" cy="145" rx="220" ry="100" fill="#1E7ACA" opacity=".17" filter="url(#haze)"/>
+  <path d="M95 155H1505" stroke="#84AEE1" stroke-opacity=".18"/>
+  <text x="95" y="80" class="kicker">OSYSTIC  /  ENGINEERING CASE STUDY</text>
+  <text x="95" y="135" class="title">Bilingual Higher-Education CMS</text>
+  <text x="1505" y="80" text-anchor="end" class="small">CONCEPTUAL ARCHITECTURE</text>
+  <text x="95" y="191" class="sub">Access-controlled academic operations, coherent workflows and Arabic / English presentation</text>
+  <!-- Entry points -->
+  <g filter="url(#shadow)">
+    <rect x="94" y="250" width="356" height="463" rx="28" fill="url(#glass)" stroke="#426283" stroke-opacity=".78"/>
+    <rect x="115" y="276" width="314" height="66" rx="18" fill="#183453"/>
+    <circle cx="147" cy="309" r="12" fill="#65D2FA"/>
+    <text x="172" y="316" class="cardTitle">Bilingual portal</text>
+    <rect x="122" y="368" width="300" height="72" rx="15" fill="#112A42" stroke="#315477"/>
+    <text x="151" y="401" class="cardTitle">Arabic / English</text>
+    <text x="151" y="425" class="cardSub">RTL  ↔  LTR interfaces</text>
+    <rect x="122" y="462" width="300" height="72" rx="15" fill="#112A42" stroke="#315477"/>
+    <text x="151" y="495" class="cardTitle">Staff &amp; faculty</text>
+    <text x="151" y="519" class="cardSub">Authorized workflows</text>
+    <rect x="122" y="555" width="300" height="72" rx="15" fill="#112A42" stroke="#315477"/>
+    <text x="151" y="588" class="cardTitle">Student services</text>
+    <text x="151" y="612" class="cardSub">Controlled self-service</text>
+    <text x="134" y="672" class="small">RESPONSIVE EXPERIENCE</text>
+  </g>
+  <!-- Core security -->
+  <path d="M450 490H535" class="connector"/>
+  <path d="M1030 490H1098" class="connector"/>
+  <g filter="url(#shadow)">
+    <rect x="535" y="299" width="495" height="390" rx="34" fill="#101F35" stroke="#5EA4F4" stroke-opacity=".70" stroke-width="2"/>
+    <rect x="555" y="320" width="455" height="349" rx="26" fill="none" stroke="#6583A5" stroke-opacity=".25"/>
+    <path d="M737 370l45-19 45 19v45c0 37-17 58-45 76-28-18-45-39-45-76z" fill="#1B446D" stroke="#85D7FF" stroke-width="3"/>
+    <path d="M766 417l13 13 24-28" fill="none" stroke="#87E5FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="782" y="531" text-anchor="middle" class="core">CMS Service Core</text>
+    <text x="782" y="570" text-anchor="middle" class="cardSub">Role-based access and workflow rules</text>
+    <path d="M625 592h314" stroke="#4C749C" stroke-opacity=".65"/>
+    <rect x="610" y="610" width="152" height="42" rx="21" fill="#173D60"/>
+    <text x="686" y="638" text-anchor="middle" class="pill">RBAC</text>
+    <rect x="785" y="610" width="162" height="42" rx="21" fill="#173D60"/>
+    <text x="866" y="638" text-anchor="middle" class="pill">AUDIT TRAIL</text>
+  </g>
+  <!-- Modules -->
+  <g filter="url(#shadow)">
+    <rect x="1098" y="250" width="408" height="464" rx="28" fill="url(#glass)" stroke="#426283" stroke-opacity=".78"/>
+    <text x="1137" y="297" class="small">INSTITUTIONAL SERVICE DOMAINS</text>
+    <g>
+      <rect x="1120" y="321" width="172" height="97" rx="16" fill="#112D46" stroke="#3D678B"/>
+      <text x="1144" y="363" class="cardTitle">Admissions</text><text x="1144" y="392" class="cardSub">Applications</text>
+      <rect x="1312" y="321" width="172" height="97" rx="16" fill="#112D46" stroke="#3D678B"/>
+      <text x="1336" y="363" class="cardTitle">Academics</text><text x="1336" y="392" class="cardSub">Courses &amp; grades</text>
+      <rect x="1120" y="434" width="172" height="97" rx="16" fill="#112D46" stroke="#3D678B"/>
+      <text x="1144" y="476" class="cardTitle">Finance</text><text x="1144" y="505" class="cardSub">Fees &amp; reports</text>
+      <rect x="1312" y="434" width="172" height="97" rx="16" fill="#112D46" stroke="#3D678B"/>
+      <text x="1336" y="476" class="cardTitle">Faculty</text><text x="1336" y="505" class="cardSub">Workloads</text>
+      <rect x="1120" y="547" width="172" height="97" rx="16" fill="#112D46" stroke="#3D678B"/>
+      <text x="1144" y="589" class="cardTitle">Quality</text><text x="1144" y="618" class="cardSub">Evidence &amp; KPIs</text>
+      <rect x="1312" y="547" width="172" height="97" rx="16" fill="#112D46" stroke="#3D678B"/>
+      <text x="1336" y="589" class="cardTitle">Learning</text><text x="1336" y="618" class="cardSub">Assessment</text>
+    </g>
+    <text x="1137" y="682" class="small">MODULE BOUNDARIES · POLICY-AWARE</text>
+  </g>
+  <!-- Data plane -->
+  <path d="M784 689V758" class="connector"/>
+  <g filter="url(#shadow)">
+    <rect x="370" y="758" width="860" height="80" rx="20" fill="#112943" stroke="#3D7EB5" stroke-opacity=".8"/>
+    <circle cx="429" cy="799" r="19" fill="#214C6A" stroke="#6BCEF1" stroke-width="2"/>
+    <path d="M417 797c0-9 24-9 24 0v7c0 9-24 9-24 0z M417 797c0 8 24 8 24 0" fill="none" stroke="#A8E9FF" stroke-width="2"/>
+    <text x="475" y="806" class="cardTitle">Relational data  ·  Protected documents  ·  Audit records</text>
+  </g>
+  <text x="95" y="868" class="sub">Sanitized engineering concept — not a screenshot, production data or acceptance evidence.</text>
+  <text x="1505" y="868" text-anchor="end" class="small">© OSYSTIC</text>
+</svg>
