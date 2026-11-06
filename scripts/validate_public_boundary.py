@@ -2,18 +2,29 @@
 # Guard the independent public case study against private-source additions.
 from pathlib import Path
 import re
+import hashlib
 import xml.etree.ElementTree as ET
 root=Path(__file__).resolve().parents[1]
 required=['README.md','case-study.md','NOTICE.md','SECURITY.md','.osystic/repository.yml',
-          'docs/disclosure-boundary.md','docs/validation-evidence.md']
+          'docs/disclosure-boundary.md','docs/validation-evidence.md',
+          'assets/campus-system-concept.svg','assets/campus-system-concept.webp']
 for name in required:
     assert (root/name).is_file(), f'Missing case-study artifact: {name}'
-files=[p for p in root.rglob('*') if p.is_file() and '.git' not in p.parts]
+files=[p for p in root.rglob('*') if p.is_file() and '.git' not in p.parts and '__pycache__' not in p.parts and p.name != '.DS_Store']
 disallowed={'.php','.sql','.zip','.m4v','.mp4','.jpeg','.jpg','.png','.pem','.p12','.db','.sqlite'}
 private_markers=['shom'+'oukh','sae'+'.edu.sa','u417'+'552230','cms'+'_private',
                  'BEGIN PRI'+'VATE KEY','ghp_'+'ABCDEFGHIJKLMNOPQRSTUVWXYZ']
+# The only permitted binary is an audited, deterministic export of our public SVG.
+approved_cover=root/'assets/campus-system-concept.webp'
+approved_cover_sha256='1d929d6c78709f5ad19ed9566aff8d8a4ce09d5239bae9329aa4f18ee6b787aa'
 errors=[]
 for p in files:
+    if p==approved_cover:
+        payload=p.read_bytes()
+        if (len(payload)>5*1024*1024 or not (payload[:4]==b'RIFF' and payload[8:12]==b'WEBP')
+            or hashlib.sha256(payload).hexdigest()!=approved_cover_sha256):
+            errors.append('Approved editorial WebP is missing, changed or not a safe verified export')
+        continue
     if p.suffix.lower() in disallowed:errors.append('Disallowed file type: '+str(p.relative_to(root)))
     try:data=p.read_text(encoding='utf-8')
     except UnicodeDecodeError:
